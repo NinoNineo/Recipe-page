@@ -80,7 +80,7 @@ h1:hover {
     line-height: 20px;
     color: #7A284E;
     font-weight: 600;
-    margin: 32px 28px 16px 0;
+    margin: 0px 28px 16px 0;
 }
 
 span {
@@ -182,6 +182,7 @@ hr {
     background-color: #FFF7FB;
     border-radius: 12px;
     padding: 28px;
+    margin-top: 32px;
 }
 
 .attribution {
@@ -295,7 +296,8 @@ hr {
 }
 
 @media only screen and (min-width: 1440px) {
-    body {
+    body 
+    {
         padding-top: 124px;
         padding-bottom: 64px;
     }
