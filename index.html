@@ -4,99 +4,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style/style.css">
   <title>Frontend Mentor | Recipe page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
 </head>
 
 <body>
-  <div class="body">
-    <div class="image">
-      <img src="assets/images/image-omelette.jpeg" alt="omlette">
-    </div>
-    <h1>Simple Omelette Recipe</h1>
+  <main>
+    <div class="body">
+      <div class="image">
+        <img src="assets/images/image-omelette.jpeg" alt="omlette">
+      </div>
+      <div class="main">
+        <h1>Simple Omelette Recipe</h1>
+        <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
+          to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+        <div class="purpure divpurpure">
+          <h2 class="h2">Preparation time</h2>
+          <ul>
+            <li><span>Total</span>: Approximately 10 minutes</li>
+            <li><span> Preparation</span>: 5 minutes</li>
+            <li><span>Cooking</span>: 5 minutes</li>
+          </ul>
+        </div>
+        <div class="broun">
+          <h3>Ingredients</h3>
+          <ul>
+            <li>2-3 large eggs</li>
+            <li>Salt, to taste</li>
+            <li>Pepper, to taste</li>
+            <li>1 tablespoon of butter or oil</li>
+            <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+          </ul>
+        </div>
+        <hr>
+        <h3>Instructions</h3>
+        <div class="flex">
+          <p class="number">1.</p>
+          <p><span>Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well
+            mixed. You can add a tablespoon of water or milk for a fluffier texture.</p>
+        </div>
+        <div class="flex">
+          <p class="number">2.</p>
+          <p><span>Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</p>
+        </div>
+        <div class="flex">
+          <p class="number">3.</p>
+          <p><span>Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to
+            ensure the eggs evenly coat the surface.</p>
+        </div>
+        <div class="flex">
+          <p class="number">4.</p>
+          <p><span>Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny
+            in the middle, sprinkle your chosen fillings over one half of the omelette.</p>
+        </div>
+        <div class="flex">
+          <p class="number">5.</p>
+          <p><span>Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over
+            the
+            fillings. Let it cook for another minute, then slide it onto a plate.</p>
+        </div>
+        <hr>
 
-    <p class="paragraf1">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
-      to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
-    <div class="purpure">
-      <h2 class="h2">Preparation time</h2>
-      <ul>
-        <li><span>Total</span>: Approximately 10 minutes</li>
-        <li><span> Preparation</span>: 5 minutes</li>
-        <li><span>Cooking</span>: 5 minutes</li>
-      </ul>
-    </div>
-    <div class="broun">
-      <h3>Ingredients</h3>
-      <ul>
-        <li>2-3 large eggs</li>
-        <li>Salt, to taste</li>
-        <li>Pepper, to taste</li>
-        <li>1 tablespoon of butter or oil</li>
-        <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
-      </ul>
-    </div>
-    <hr>
-    <h3>Instructions</h3>
-    <ol class="broun">
-      <li><span class="spanbold"> Beat the eggs</span>: In a bowl, beat the eggs with a pinch of salt and pepper until
-        they are well mixed.You can add a tablespoon of water or milk for a fluffier texture.</li>
-      <li><span class="spanbold">Heat the pan</span>: Place a non-stick frying pan over medium heat and add butter or
-        oil.</li>
-      <li><span class="spanbold">Cook the omelette</span>: Once the butter is melted and bubbling, pour in the eggs.
-        Tilt the pan to ensure
-        the eggs evenly coat the surface.</li>
-      <li><span class="spanbold"> Add fillings (optional)</span>: When the eggs begin to set at the edges but are still
-        slightly runny in the
-        middle, sprinkle your chosen fillings over one half of the omelette.</li>
-      <li><span class="spanbold">Fold and serve</span>: As the omelette continues to cook, carefully lift one edge and
-        fold it over the
-        fillings. Let it cook for another minute, then slide it onto a plate.
-      </li>
-      <li><span class="spanbold"> Enjoy</span>: Serve hot, with additional salt and pepper if needed.</li>
-    </ol>
-
-<hr>
-    <h3>Nutrition</h3>
-
-    <p>The table below shows nutritional values per serving without the additional fillings.</p>
-    <table>
-      <tr>
-        <td class="border-td">Calories</td>
-        <td class="border-td spanpurpure">277kcal</td>
-      </tr>
-      <tr>
-        <td class="border-td">Carbs</td>
-        <td class="border-td spanpurpure">0g</td>
-      </tr>
-      <tr>
-        <td class="border-td">Protein</td>
-        <td class="border-td spanpurpure">20g</td>
-      </tr>
-      <tr>
-        <td>Fat</td>
-        <td class="spanpurpure">22g</td>
-      </tr>
-    </table>
-
-
-
-
-
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      <div class="flex name">
-      
-      <p class="name flex"> Coded by &ensp;
-        <span class="letter">N</span><span class="letter">i</span><span class="letter">n</span><span class="letter">o</span> <span class="letter">p</span><span class="letter">a</span><span class="letter">p</span><span class="letter">a</span><span class="letter">s</span><span class="letter">h</span><span class="letter">v</span><span class="letter">i</span><span class="letter">l</span><span class="letter">i</span></p>
+        <h3>Nutrition</h3>
+        <p>The table below shows nutritional values per serving without the additional fillings.</p>
+        <div class="table">
+          <div class="flex border-td">
+            <div class="tablerow">Calories</div>
+            <span class="tablerow spanpurpure">277kcal</span>
+          </div>
+          <div class="flex border-td">
+            <div class="tablerow">Carbs</div>
+            <span class="tablerow spanpurpure">0g</span>
+          </div>
+          <div class="flex border-td">
+            <div class="tablerow">Protein</div>
+            <span class="tablerow spanpurpure">20g</span>
+          </div>
+          <div class="flex border-td">
+            <div class="tablerow">Fat</div>
+            <span class="tablerow spanpurpure">22g</span>
+          </div>
+        </div>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          <div class="flex name">
+            <p class="name flex"> Coded by &ensp;
+              <span class="letter">N</span>
+              <span class="letter">i</span>
+              <span class="letter">n</span>
+              <span class="letter">o</span>
+              <span class="letter">&ensp;</span>
+              <span class="letter">P</span>
+              <span class="letter">a</span>
+              <span class="letter">p</span>
+              <span class="letter">a</span>
+              <span class="letter">s</span>
+              <span class="letter">h</span>
+              <span class="letter">v</span>
+              <span class="letter">i</span>
+              <span class="letter">l</span>
+              <span class="letter">i</span>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+    </div>
+  </main>
 </body>
 
 </html>

@@ -12,6 +12,7 @@
     font-family: "outfit-semibold";
     src: url(../assets/fonts/outfit/static/Outfit-SemiBold.ttf);
 }
+
 @font-face {
     font-family: "outfit-bold";
     src: url(../assets/fonts/outfit/static/Outfit-Bold.ttf);
@@ -32,8 +33,6 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #5F564D;
-    padding-top: 124px;
-    padding-bottom: 64px;
 }
 
 .body {
@@ -69,7 +68,8 @@ h1 {
     margin: 40px 0 24px 0;
     transition: 1s;
 }
-h1:hover{
+
+h1:hover {
     text-shadow: 2px 2px 2px #0000007f;
     transition: 1s;
 }
@@ -80,7 +80,7 @@ h1:hover{
     line-height: 20px;
     color: #7A284E;
     font-weight: 600;
-    margin: 60px 28px 16px 28px;
+    margin: 32px 28px 16px 0;
 }
 
 span {
@@ -90,22 +90,10 @@ span {
     line-height: 24px;
     color: #5F564D;
 }
-.spanbold{
-    font-family: "outfit-bold";
-    font-weight: 700;
-}
-.spanpurpure{
-    color: #854632;
-    font-family: "outfit-bold";
-    font-weight: 700;
-}
 
-p {
-    /* font-family: "outfit-regular";
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #5F564D; */
+.spanbold {
+    font-family: "outfit-bold";
+    font-weight: 700;
 }
 
 h3 {
@@ -138,7 +126,7 @@ ul li {
 ul li::marker {
     content: "\2022";
     font-weight: bold;
-    display: block;
+    display: inline-block;
     width: 4px;
     margin: 4px;
 }
@@ -157,71 +145,158 @@ ul li:hover::marker {
 .broun ul li::marker {
     color: #854632;
 }
-ol {
-    list-style: none;
-    counter-reset: item;
-}
-ol li {
-    counter-increment: item;
-}
-ol li::before {
-    content: counter(item) ". ";
+
+.number {
     color: #854632;
-    display: inline-block;
-    margin-right: 20px;
+    margin-right: 16px;
     font-weight: 700;
-    font-family: "outfit-semibold";
 }
 
-table
-{
+.flex p {
+    margin-top: 8px;
+}
+
+.table {
     width: 100%;
     padding: 0 32px;
     margin: 24px 0 0 0;
-}
-td
-{
-    padding: 12px 0 12px 0;
-    font-family: "outfit-regular";
     color: #5F564D;
 }
-.border-td
-{
+
+.tablerow {
+    padding: 12px 0 12px 32px;
+    font-family: "outfit-regular";
+
+}
+
+.border-td {
     border-bottom: 1px solid #E3DDD7;
 }
-hr{
+
+hr {
     color: #E3DDD7;
     margin-top: 32px;
 }
-.attribution{
+
+.divpurpure {
+    background-color: #FFF7FB;
+    border-radius: 12px;
+    padding: 28px;
+}
+
+.attribution {
     margin-top: 40px;
     text-align: center;
 }
-.letter{
-    display: block;
+
+.letter {
+    display: inline-block;
     transition: 3s;
 
 }
-.name:hover .letter
-{
+
+.name:hover .letter {
     transform: rotate(360deg);
     transition: 3s ease-in-out;
 }
-.name{
+
+.name {
     transition: 3s;
     font-size: 18px;
     margin: 0 auto;
-    color :#781286;
-    font-family: "outfit-semibold";
 }
-.name span{
-    color :#781286;
+
+.name span {
+    color: #781286;
     font-family: "outfit-semibold";
     font-size: 18px;
-
 }
-.flex{
+
+.flex {
     display: flex;
-    justify-content: space-between;
+}
+
+.table h2 {
+    margin-bottom: 20px;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    margin-top: 24px;
+}
+
+.table hr {
+    width: 100%;
+    height: 1px;
+    color: #d3d3d3;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.border-td {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.border-td .spanpurpure {
+    color: #854632;
+    font-weight: 800;
+    width: 40%;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        padding: 0;
+        width: 100vw;
+    }
+
+    .image {
+        width: 100%;
+        border-radius: 0px;
+        height: 170px;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+    .body {
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+    }
+
+    .main {
+        padding: 40px 32px;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 36px;
+        margin-top: 0;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    h3 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .table {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        padding-top: 124px;
+        padding-bottom: 64px;
+    }
 }
